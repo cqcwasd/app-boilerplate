@@ -23,7 +23,7 @@
 #include "../constants.h"
 #include "../globals.h"
 #include "../sw.h"
-#include "common/buffer.h"
+#include "buffer.h"
 
 int helper_send_response_pubkey() {
     uint8_t resp[1 + 1 + PUBKEY_LEN + 1 + CHAINCODE_LEN] = {0};

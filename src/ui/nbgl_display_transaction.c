@@ -31,13 +31,13 @@
 #include "display.h"
 #include "constants.h"
 #include "../globals.h"
-#include "../io.h"
+#include "io.h"
 #include "../sw.h"
 #include "../address.h"
 #include "action/validate.h"
 #include "../transaction/types.h"
-#include "../common/bip32.h"
-#include "../common/format.h"
+#include "bip32.h"
+#include "format.h"
 #include "../menu.h"
 
 // Buffer where the transaction amount string is written

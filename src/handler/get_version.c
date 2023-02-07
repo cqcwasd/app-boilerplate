@@ -22,10 +22,10 @@
 #include "get_version.h"
 #include "../globals.h"
 #include "../constants.h"
-#include "../io.h"
+#include "io.h"
 #include "../sw.h"
 #include "../types.h"
-#include "common/buffer.h"
+#include "buffer.h"
 
 int handler_get_version() {
     _Static_assert(APPVERSION_LEN == 3, "Length of (MAJOR || MINOR || PATCH) must be 3!");

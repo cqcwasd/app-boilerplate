@@ -18,7 +18,7 @@
 #include "deserialize.h"
 #include "utils.h"
 #include "types.h"
-#include "../common/buffer.h"
+#include "buffer.h"
 
 parser_status_e transaction_deserialize(buffer_t *buf, transaction_t *tx) {
     if (buf->size > MAX_TX_LEN) {
