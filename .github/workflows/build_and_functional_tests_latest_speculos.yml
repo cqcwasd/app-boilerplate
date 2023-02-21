@@ -27,8 +27,8 @@ jobs:
   ragger_tests:
     name: Run ragger tests using the reusable workflow
     needs: build_application
-    uses: LedgerHQ/ledger-app-workflows/.github/workflows/reusable_ragger_tests_latest_speculos.yml@v1
+    uses: LedgerHQ/ledger-app-workflows/.github/workflows/reusable_ragger_tests_latest_speculos.yml@latest-speculos-builder
     with:
       download_app_binaries_artifact: compiled_app_binaries
       test_dir: tests
-      speculos_app_branch_name: ${{ github.event.inputs.speculos_branch }}
+      speculos_app_branch_name: develop
